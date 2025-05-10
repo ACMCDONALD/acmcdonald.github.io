@@ -1,11 +1,142 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Portfolio</title>
-     <meta charset="UTF-8" />
-     <meta http-equiv="refresh" content="0; URL=https://acmcdonald.github.io/portfolio.pdf"/>
-   </head>
-   <body>
-     <p>This page has been moved. If you are not redirected click <a href="https://acmcdonald.github.io/portfolio.pdf">here</a> to go to my portfolio.</p>
-   </body>
+<html lang="en">
+<head>
+
+  <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrew McDonald</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Carrois Gothic', sans-serif;
+    }
+
+    body {
+      background-color: #2a585e;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .shape1 {
+      position: absolute;
+      top: -5%;
+      left: -5%;
+      width: 120%;
+      height: 50%;
+      background-color: #faf1de;
+      transform: rotate(-5deg);
+      z-index: 1;
+    }
+
+    .shape2 {
+      position: absolute;
+      top: 15%;
+      left: -5%;
+      width: 120%;
+      height: 60%;
+      background-color: #2a585e;
+      transform: rotate(-5deg);
+      z-index: 2;
+    }
+
+    .shape3 {
+      position: absolute;
+      bottom: 0;
+      left: -10%;
+      width: 130%;
+      height: 30%;
+      background-color: #202324;
+      transform: rotate(-5deg);
+      z-index: 3;
+    }
+
+    nav {
+      position: relative;
+      z-index: 4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+      background: rgba(0, 0, 0, 0.3);
+      color: white;
+    }
+
+    nav .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5em;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #e9e4d8;
+    }
+
+    .content {
+      position: relative;
+      z-index: 4;
+      color: white;
+      text-align: center;
+      padding-top: 15%;
+    }
+
+    .button {
+      margin-top: 2em;
+      padding: 0.8em 1.5em;
+      font-size: 1em;
+      background-color: #e9e4d8;
+      color: #1f4f5c;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #cfcab9;
+    }
+  </style>
+</head>
+<body>
+  <div class="shape1"></div>
+  <div class="shape2"></div>
+  <div class="shape3"></div>
+
+  <nav>
+    <div class="logo">Andrew McDonald</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Resume</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h2> 01000011011110010110001001100101</h2>
+    <h2> 0111001000100000010100110110010101100011</h2>
+    <h2> 0111010101110101011010010111010001111001</h2>
+    <h2> 0010000001000001011011100110000101101100</h2>
+    <h2> 011110010111001101110100 </h2>
+    
+    <button class="button">Get Started</button>
+  </div>
+</body>
 </html>
