@@ -3,12 +3,13 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: 'Carrois Gothic', sans-serif;
+  
 }
 
 body {
   background-color: #22454a;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .shape1 {
@@ -87,6 +88,13 @@ nav ul li a:hover {
   padding-top: 15%;
 }
 
+.content img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 2em;
+}
+
 .button {
   margin-top: 2em;
   padding: 0.8em 1.5em;
@@ -102,4 +110,3 @@ nav ul li a:hover {
 .button:hover {
   background-color: #cfcab9;
 }
-
