@@ -9,7 +9,7 @@ body, html {
 body {
   background-color: #22454a;
   position: relative;
-  overflow-x: hidden;
+ /* overflow-x: hidden; */
 }
 
 .shape1 {
